@@ -26,6 +26,15 @@ mysql
 
  3. 以管理员身份打开 cmd 命令行工具，切换目录：cd C:\web\mysql-8.0.28-winx64\bin     >   .\mysqld.exe install    >   初始化数据库：mysqld --initialize --console  > 执行完成后，会输出 root 用户的初始默认密码   如：([Server] A temporary password is generated for root@localhost: GU_FH9d??UCB)
 
+ 4. fatal: unable to access 'https://github.com/RoberterSP/node-demo.git/': Failed to connect to github.com 
+port 443 after 21117 ms: Timed out
+
+解决办法：
+```
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
 
 jest  (单元测试)
 
