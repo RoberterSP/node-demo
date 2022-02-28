@@ -29,11 +29,11 @@ mysql
  4. fatal: unable to access 'https://github.com/RoberterSP/node-demo.git/': Failed to connect to github.com 
 port 443 after 21117 ms: Timed out
 
-解决办法：
-```
-git config --global --unset http.proxy
-git config --global --unset https.proxy
-```
+        解决办法：
+        ```
+        git config --global --unset http.proxy
+        git config --global --unset https.proxy
+        ```
 
 
 jest  (单元测试)
